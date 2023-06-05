@@ -14,10 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('facultades', function (Blueprint $table) {
-            $table->char('codFacultad', 2);
-            $table->char('nomFacultad', 30);
+            $table->char('codfacultad', 2);
+            $table->char('nomfacultad', 30);
+            
+            $table->primary('codfacultad');
+            
             $table->timestamps();
-            $table->primary('codFacultad');
         });
     }
 
