@@ -24,6 +24,10 @@ return new class extends Migration
             $table-> float('nfinal');
             $table-> char('estado',1);
 
+            $table->primary(['estudiante','materia','profesor']);
+            // $table->primary('estudiante');
+            // $table->primary('materia');
+            // $table->primary('profesor');
             $table->foreign('estudiante')
             ->references('codestudiante')->on('estudiantes');
             $table->foreign('materia')
@@ -31,7 +35,7 @@ return new class extends Migration
             $table->foreign('profesor')
             ->references('codprofesor')->on('profesores');
 
-            $table->timestamps();            
+            $table->timestamps();
 
         });
     }
