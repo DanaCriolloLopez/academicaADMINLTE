@@ -31,7 +31,6 @@
             <th scope="row">{{$contador}}</th>
             <td>{{$f->codfacultad}}</td>
             <td>{{$f->nomfacultad}}</td>
-            <td>Otto</td>
             <td>
             <a class="btn btn-info"  href="{{route('editarFac',$f->codfacultad)}}">Editar</a>
             <a class="btn btn-danger" href="{{route('eliminaFac',$f->codfacultad)}}">Eliminar</a>
