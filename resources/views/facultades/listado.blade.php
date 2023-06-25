@@ -33,8 +33,8 @@
             <td>{{$f->nomfacultad}}</td>
             <td>Otto</td>
             <td>
-            <a class="btn btn-info">Editar</a>
-            <a class="btn btn-danger">Eliminar</a>
+            <a class="btn btn-info"  href="{{route('editarFac',$f->codfacultad)}}">Editar</a>
+            <a class="btn btn-danger" href="{{route('eliminaFac',$f->codfacultad)}}">Eliminar</a>
             </td>
             </tr>
             @php

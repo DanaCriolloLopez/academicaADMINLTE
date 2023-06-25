@@ -9,22 +9,22 @@
 @stop
 
 @section('content')
-    <div class="container">
-    <p>Registro de facultades</p>
+<div class="container">
+    <p>Editar facultad</p>
 
-    <form action= "{{url('facultades/registrar')}}" method= "POST">
+    <form action= "{{route('actualizar_facultad', $facultad->codfacultad)}}" method= "POST">
         @csrf
         <div class="mb-3">
             <label for="codfacultad" class="form-label">Código:</label>
-            <input type="number" class="form-control" name="codfacultad" id="codfacultad" placeholder="Ingrese el código">
+            <input type="number" class="form-control" name="codfacultad" id="codfacultad" value='{{$facultad->codfacultad}}'>
         </div>
         <div class="mb-3">
             <label for="nomfacultad" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" id="nomfacultad" name="nomfacultad" placeholder="Ingrese el nombre">
+            <input type="text" class="form-control" id="nomfacultad" name="nomfacultad" value='{{$facultad->nomfacultad}}'>
         </div>
-        <button type="submit" class="btn btn-dark">Registrar</button>
+        <button type="submit" class="btn btn-dark">Actualizar</button>
     </form>
-    </div>
+</div>
 @stop
 
 @section('css')
