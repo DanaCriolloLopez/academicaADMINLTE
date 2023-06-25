@@ -40,7 +40,12 @@ Route::post('/programas/editar/{id}', [Programas::class, 'actualizar'])->name('a
 
 Route::get('/estudiantes/listado', [Estudiantes::class, 'index']);
 
-Route::get('/profesores/listado', [Profesores::class, 'index']);
+Route::get('/profesores/listado', [Profesores::class, 'index'])->name('listadoProfe');
+Route::get('/profesores/registro', [Profesores::class, 'form_registro']);
+Route::post('/profesores/registro', [Profesores::class, 'registrar']);
+Route::get('/profesores/eliminar/{id}', [Profesores::class, 'eliminar'])->name('eliminaProfe');
+Route::get('/profesores/editar/{id}', [Profesores::class, 'editar'])->name('editarProfe');
+Route::post('/profesores/editar/{id}', [Profesores::class, 'actualizar'])->name('actualizar_profesor');
 
 Route::get('/regnotas/listado', [Calificaciones::class, 'index']);
 
