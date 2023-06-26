@@ -12,7 +12,7 @@
     <p>Listado de Profesores</p>
 
      
-    <a class="btn btn-success" href="/profesores/registro" >Adicionar</a>
+    <a class="btn btn-secondary" href="/profesores/registro" >Adicionar</a>
     <br>
     <table  class="table table-dark">
         <thead>

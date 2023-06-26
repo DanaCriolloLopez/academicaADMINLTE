@@ -11,7 +11,7 @@
 @section('content')
     <p>Listado de Facultades</p>
 
-    <a class="btn btn-success" href="/facultades/registrar">Adicionar</a>
+    <a class="btn btn-secondary" href="/facultades/registrar">Adicionar</a>
     <br>
     <table  class="table table-dark">
         <thead>

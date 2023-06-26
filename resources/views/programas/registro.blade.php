@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Registro de Facultades</h1>
+    <h1>Registro de Programas</h1>
 
 
 @stop

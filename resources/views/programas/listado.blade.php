@@ -12,7 +12,7 @@
     <p>Listado de Programas</p>
 
     
-    <a class="btn btn-success" href="/programas/registro">Adicionar</a>
+    <a class="btn btn-secondary" href="/programas/registro">Adicionar</a>
     <br>
     <table  class="table table-dark">
         <thead>
